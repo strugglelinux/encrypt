@@ -80,9 +80,9 @@ zncjRK3pbVkv0KrKfczuJiRlZ7dUzVO0b6QJr8TRAA==
 -----END RSA PRIVATE KEY-----
 `)
 
-	// 公钥: 根据私钥生成
-	//openssl rsa -in rsa_private_key.pem -pubout -out rsa_public_key.pem
-	publicKey := []byte(`
+ // 公钥: 根据私钥生成
+ //openssl rsa -in rsa_private_key.pem -pubout -out rsa_public_key.pem
+ publicKey := []byte(`
 -----BEGIN PUBLIC KEY-----
 MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDcGsUIIAINHfRTdMmgGwLrjzfM
 NSrtgIf4EGsNaYwmC1GjF/bMh0Mcm10oLhNrKNYCTTQVGGIxuc5heKd1gOzb7bdT
@@ -91,13 +91,12 @@ y682X1+R1lRK8D+vmQIDAQAB
 -----END PUBLIC KEY-----
 `)
 
-	source := "hello world"
-	ras := &RSA{}
-	ras.SetPrivateKey(privateKey)
-	ras.SetPublicKey(publicKey)
-	data, _ := ras.Encrypt([]byte(source))
-	origData, _ := ras.Decrypt(data)
+ source := "hello world"
+ ras := &RSA{}
+ ras.SetPrivateKey(privateKey)
+ ras.SetPublicKey(publicKey)
+ data, _ := ras.Encrypt([]byte(source))
+ origData, _ := ras.Decrypt(data)
 ```
-
 
 参考：  [Go 加密解密算法总结](https://mp.weixin.qq.com/s/fMroAYNPGI80MDqLbcenyQ)  
