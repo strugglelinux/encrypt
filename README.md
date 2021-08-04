@@ -38,9 +38,9 @@ func Sha1(d string) string {
  高级加密标准（Advanced Encryption Standard，AES) 又称Rijndael加密法
  AES中常见的有三种解决方案，分别为AES-128、AES-192和AES-256。如果采用真正的128位加密技术甚至256位加密技术，蛮力攻击要取得成功需要耗费相当长的时间
  AES 有五种加密模式：
-> 电码本模式（Electronic Codebook Book (ECB)）
-> 密码分组链接模式（Cipher Block Chaining (CBC)）
-> 计算器模式（Counter (CTR)）
+>电码本模式（Electronic Codebook Book (ECB)）
+>密码分组链接模式（Cipher Block Chaining (CBC)）
+>计算器模式（Counter (CTR)）
 > 密码反馈模式（Cipher FeedBack (CFB)）
 > 输出反馈模式（Output FeedBack (OFB)）
 
