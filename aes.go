@@ -246,7 +246,9 @@ type AES struct {
 }
 
 func NewAES() *AES {
-	return &AES{}
+	aec := &AES{}
+	aec.obj = aec.getType()
+	return aec
 }
 
 //加密

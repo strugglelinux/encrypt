@@ -13,6 +13,10 @@ type RSA struct {
 	PublicKey  []byte
 }
 
+func NewRsa() *RSA {
+	return &RSA{}
+}
+
 //设置公钥
 func (r *RSA) SetPublicKey(publicKey []byte) {
 	r.PublicKey = publicKey

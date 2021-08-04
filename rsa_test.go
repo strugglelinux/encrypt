@@ -36,7 +36,7 @@ y682X1+R1lRK8D+vmQIDAQAB
 `)
 
 	source := "hello world"
-	ras := &RSA{}
+	ras := NewRsa()
 	ras.SetPrivateKey(privateKey)
 	ras.SetPublicKey(publicKey)
 	data, _ := ras.Encrypt([]byte(source))
